@@ -281,6 +281,7 @@ chart.invalidateSize();
 
 		var url = "https://query.yahooapis.com/v1/public/yql";
     	var data = encodeURIComponent("select * from rss where url='https://finance.yahoo.com/rss/2.0/headline?s=" + stock + "&region=US&lang=en-US'");
+			console.log("https");
     	$.getJSON(url, 'q=' + data + "&format=json&diagnostics=true&callback=")
         .done(function (data) {
         	$("#newsList li").remove();
