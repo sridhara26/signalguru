@@ -280,7 +280,7 @@ chart.invalidateSize();
 	function getYQLNews(stock) {
 
 		var url = "https://query.yahooapis.com/v1/public/yql";
-    	var data = encodeURIComponent("select * from rss where url='http://finance.yahoo.com/rss/2.0/headline?s=" + stock + "&region=US&lang=en-US'");
+    	var data = encodeURIComponent("select * from rss where url='https://finance.yahoo.com/rss/2.0/headline?s=" + stock + "&region=US&lang=en-US'");
     	$.getJSON(url, 'q=' + data + "&format=json&diagnostics=true&callback=")
         .done(function (data) {
         	$("#newsList li").remove();
