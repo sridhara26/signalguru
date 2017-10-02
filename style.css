@@ -1,0 +1,329 @@
+body{
+	background-color: #f2f2f2;
+	font-family: "Kefa";
+	font-weight: normal;
+}
+#title{
+	top: -30px;
+	position: fixed;
+	color: white;
+	background-color: #0066cc;
+	font-size: 45px;
+	width: 100%;
+	left: 0px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+
+	z-index: 2;
+	box-shadow: 0px 4px 3px #888888;
+	overflow: hidden;
+
+}
+#navTabs li {
+
+	list-style: none;
+	display: inline;
+	padding: 13px;
+
+}
+#navTabs {
+	visibility: hidden;
+	z-index: 2;
+	position: fixed;
+	left: 270px;
+	top: 5px;
+}
+.tabs{
+	font-size: 17px;
+	color: white;
+}
+.tabs:hover,:focus{
+	cursor: pointer;
+	color: black;
+}
+
+#myTable{
+	border-collapse: collapse;
+	background-color: white;
+	text-align: center;
+	width: 40%;
+	position: relative;
+	float: left;
+	float: top;
+	left: 10px;
+	top: 47px;
+	box-shadow: 0px 3px 3px  3px #888888;
+
+}
+
+ td {
+ 	text-align: center;
+	border-bottom: 1px solid black;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+}
+thead{
+	text-align: center;
+	padding-right: 20px;
+	background-color: lightgray;
+}
+th{
+
+	background-color: lightgray;
+	border-bottom: 1px solid black;
+}
+#myTable tr:hover{
+	background-color: #ffcc99;
+}
+#chartdiv {
+		position: relative;
+		float: right;
+		clear: none;
+		top: 25px;
+		left: 0px;
+		padding-top: 30px;
+		margin-right: 10px;
+	width: 55%;
+	height: 400px;
+		padding: 5px;
+		bottom: 10px;
+		font-size: 30px;
+	text-align: center;
+
+}
+button {
+background:none!important;
+  border:none;
+  padding:0!important;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover{
+	//color: white;
+	text-decoration: underline;
+
+}
+
+.tabs a{
+	color: white;
+	text-decoration: none;
+
+}
+.tabs a:hover {
+	color: black;
+
+}
+#HomeContainer{
+	background-color: white;
+	position: relative;
+	top: 45px;
+	padding: 8px;
+	width: 100%;
+	left: -8px;
+	box-shadow: 0px 0px 3px  #888888;
+	overflow: hidden;
+	z-index: 1;
+
+}
+#StockSigLabel{
+	position: relative;
+	top: 55px;
+	padding-top: 5px;
+}
+#chartText{
+  opacity: .7;
+}
+#historicalSignalsDiv{
+	position: relative;
+	left: -8px;
+	top: 85px;
+	box-shadow: 0px 0px 3px  #888888;
+	background-color: white;
+	padding: 8px;
+	padding-bottom: 25px;
+	width: 100%;
+	clear: right;
+	float: bottom;
+	overflow-x: auto;
+}
+#historicalTable{
+	margin: 0 auto;
+	position: relative;
+	border-collapse: collapse;
+	background-color: white;
+	text-align: center;
+	width: 50%;
+	box-shadow: 0px 3px 3px  3px #888888;
+	visibility: hidden;
+
+
+}
+form{
+	position: relative;
+	left: 10px;
+	padding-bottom: 20px;
+}
+#newsList li{
+	padding-bottom: 5px;
+}
+#newsList a{
+
+	color: black;
+	text-decoration: none;
+
+}
+#newsList a:hover,a:focus{
+	color: orange;
+	cursor: pointer;
+}
+#NewsContain{
+	width: 40%;
+	position: relative;
+	top: 45px;
+	float: bottom;
+	float: left;
+	clear: left;
+}
+#perfTable{
+	border-collapse: collapse;
+	background-color: white;
+	text-align: center;
+	width: 40%;
+	position: relative;
+	right: 20px;
+	float: right;
+	top: -25px;
+	box-shadow: 0px 3px 3px  3px #888888;
+
+
+}
+#perfTable tr:hover{
+	background-color: #ffcc99;
+}
+#slogan{
+
+	box-shadow: 0px 1px 0px  0px #a6a6a6;
+	color: gray;
+	text-align: center;
+	font-style: italic;
+}
+#PerformanceContainer{
+	padding-top: 5px;
+	clear: right;
+	position: relative;
+	top: 30px;
+	width: 100%;
+}
+#performanceChartDiv{
+	float: bottom;
+	float: left;
+	position: relative;
+	left: 10px;
+	top: 20px;
+	height: 300px;
+	width: 50%;
+	background-color: white;
+		box-shadow: 0px 3px 3px  3px #888888;
+
+}
+#SSContainer{
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 685px;
+	float: top;
+	padding-bottom: 20px;
+	box-shadow: 0px 1px 0px  0px #a6a6a6;
+}
+#home{
+position: absolute;
+  top: 0px;
+  visibility: hidden;
+}
+#perform{
+	position: absolute;
+	top: 960px;
+	visibility: hidden;
+}
+#history{
+	position: absolute;
+	top: 1443px;
+	visibility: hidden;
+}
+#faq{
+	position: absolute;
+	top: 295px;
+	visibility: hidden;
+}
+
+.histTableHeads{
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+#signalDate{
+	position: relative;
+	top: 40px;
+}
+#historicalTable tr:hover{
+	background-color: #ffcc99;
+}
+
+#menuIcon{
+	padding-right: 10px;
+	font-size: 17px;
+	font-family: "Kefa";
+	color: white;
+	visibility: hidden;
+	position: fixed;
+	top: 18px;
+	right: 30px;
+	z-index: 2;
+	text-transform: uppercase;
+}
+#menuIcon:hover{
+	color: black;
+	cursor: pointer;
+}
+
+#menuList{
+	border-top: 1px solid #636366;
+		list-style: none;
+		margin: 0;
+		padding: 0px;
+	padding-top: 10px;
+	background-color: #0066cc;
+	right: -50%;
+  	height: 100%;
+  	top: 0px;
+  	position: fixed;
+  	width: 50%;
+  	z-index: 3;
+  	opacity: .85;
+}
+#menuList li{
+
+border-bottom: 1px solid black;
+	line-height: 45px;
+	padding-left: 20px;
+}
+#menuList a{
+text-decoration: none;
+font-size: 20px;
+color: white;
+}
+#menuList a:hover{
+	color: black;
+}
+#xSymbol{
+	color: white;
+}
+#xSymbol:hover{
+	cursor: pointer;
+	color: black;
+}
+.notMenu{
+	position: relative;
+}

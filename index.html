@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>SignalGuru</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<script src="json-server-api/HistoricalSignals.json"></script>
+
+<script src="amcharts/amcharts.js" type="text/javascript"></script>
+<script src="amcharts/serial.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+<script src="https://www.amcharts.com/lib/3/amstock.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.xdomainajax.js"></script>
+
+
+<body>
+
+<div class="notMenu">
+	<h1 id="title">SignalGuru</h1>
+
+	<div id="menuIcon"> Menu &#9776;</div>
+</div>
+		<ul id="menuList">
+			<li class="menuTabs" id="xSymbol"> &#10006;</li>
+			<li class="menuTabs"><a href="#home">Home</a></li>
+			<li class="menuTabs"><a href="#SSContainer">Stock Signals</a></li>
+			<li class="menuTabs"><a href="#perform">SignalGuru Performance</a></li>
+			<li class="menuTabs"><a href="#history">Historical Signals</a></li>
+			<li class="menuTabs"><a href="#faq">FAQ's</a></li>
+		</ul>
+
+<div class="notMenu">
+	<ul id="navTabs">
+		<li class="tabs"><a href="#home">Home</a></li>
+		<li class="tabs"><a href="#SSContainer">Stock Signals</a></li>
+		<li class="tabs"><a href="#perform">SignalGuru Performance</a></li>
+		<li class="tabs"><a href="#history">Historical Signals</a></li>
+		<li class="tabs"><a href="#faq">FAQ's</a></li>
+	</ul>
+
+	<a class="anchor" id="home"></a>
+	<div id="HomeContainer">
+
+		<h2 id="slogan" >Timely Alerts for the Retail Investor</h2>
+		<h3>Welcome to the SignalGuru </h3>
+		<p >The SignalGuru is a very easy to use Market Timing System that provides information alerts called SIGNALS on various asset classes. Each asset class is represented by a low cost tradeable ETF (exchange traded fund). Signals are  generated just once a month, but the results are still spectacular. it is ideal for long term investors. The SignalGuru provides  <strong><font color="green">BUY</font></strong>,  <strong><font color="red">SELL</font></strong>,  <strong><font color="orange">HOLD</font></strong>, and <strong><font color="#737373">WAIT</font></strong> signals for  STOCKS, BONDS and ALTERNATIVE ASSET Classes:
+		<ul>
+		<li>STOCKS: US Stocks -S&P500(SPY), International Stocks -Europe&Far East index(EFA), Emerging Market Stocks (EEM)</li>
+		<li>BONDS: US Aggregate Bond Barclays Index (AGG)</li>
+		<li >ALTERNATIVE : Gold Fund (GLD), US Real Estate Investment Trusts (ICF), Master Limited Partnership Index (AMJ) are covered by the SignalGuru.</li>
+		<li >Allocation models are also used</li>
+		</p>
+	</div>
+	<div id="SSContainer">
+		<h2 id="StockSigLabel">Stock Signals</h2>
+		<h4 id="signalDate"></h4>
+		<table id="myTable">
+		<thead>
+		<tr>
+			<th>Stock Symbol</th>
+			<th>Name</th>
+			<th>Signal</th>
+			<th>Current Price</th>
+
+		</tr>
+		</thead>
+		<tbody>
+		</tbody>
+		</table>
+
+		<div id="chartdiv">
+			<p id="chartText">Click on a Stock Symbol to view the stock's performance over the past year and recent news</p>
+		</div>
+				<div id="NewsContain">
+				<h3 id="newsHeader"></h3>
+				<ul id="newsList">
+				</ul>
+				</div>
+	</div>
+	<a class="anchor" id="perform"></a>
+	<div id="PerformanceContainer">
+		<h2>SignalGuru Performance</h2>
+		<div id="performanceChartDiv"></div>
+		<table id="perfTable">
+		<thead>
+			<tr>
+				<th>Year</th>
+				<th>Portfolio Value</th>
+				<th>Percent Return (Annual)</th>
+			</tr>
+		</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+	</div>
+	<a class="anchor" id="history"></a>
+	<div id="historicalSignalsDiv">
+
+		<h2>Historical Signals</h2>
+		<p align="center">Select a month and year to view the SignalGuru's past signals and predictions. </p>
+		<form align="center">
+
+				<select name="m">
+					<option >Month</option>
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+				</select>
+				<select name="y">
+					<option >Year</option>
+					<option value=2005>2005</option>
+					<option value=2006>2006</option>
+					<option value=2007>2007</option>
+					<option value=2008>2008</option>
+					<option value=2009>2009</option>
+					<option value=2010>2010</option>
+					<option value=2011>2011</option>
+					<option value=2012>2012</option>
+					<option value=2013>2013</option>
+					<option value=2014>2014</option>
+					<option value=2015>2015</option>
+				</select>
+				<input type="button" value="Submit" onclick="displayHistSignal(m.value, y.value)">
+				<input onclick="clearTable()" type="button" value="Clear Table">
+		</form>
+		<table id="historicalTable">
+
+				<tr><th scope="row" class="histTableHeads">Date</th></tr>
+				<tr><th scope="row" class="histTableHeads">EEM</th></tr>
+				<tr><th scope="row" class="histTableHeads">EFA</th></tr>
+				<tr><th scope="row" class="histTableHeads">GLD</th></tr>
+				<tr><th scope="row" class="histTableHeads">IVV</th></tr>
+				<tr><th scope="row" class="histTableHeads">IYR</th></tr>
+				<tr><th scope="row" class="histTableHeads">TLT</th></tr>
+
+		</table>
+		<br><br><br>
+		<a class="anchor" id="faq"></a>
+
+		<h2>Frequently Asked Question's</h2>
+		<ul>
+			<li><strong>What is the SignalGuru?</strong>
+				<p>The SignalGuru is a very easy to use Market Timing System that provides information alerts called SIGNALS on various asset classes. Each asset class is represented by a low cost tradeable ETF (exchange traded fund). Signals are  generated just once a month, but the results are still spectacular. it is ideal for long term investors.The SignalGuru system provides monthly informational alerts on what to BUY, HOLD and SELL. These signals are computer generated based on advanced techincal analyses, market momentum, trends, yield curves, etc.
+				</p>
+			</li>
+			<li><strong>How do I get support?</strong>
+				<p>Please email support@thesignalguru.com
+				</p>
+			</li>
+			<li><strong>Why do I need the SignalGuru?</strong>
+				<p>Most Retail Investors have struggled with the timing of their BUY and SELL decisions. The investors are emotionally involved with the fund or stock they trade. SignalGuru is a mechanical system that provides BUY, HOLD and SELL informational alerts to aid in the decision process.
+				</p>
+			</li>
+			<li><strong>How good are the signals from the SignalGuru?</strong>
+				<p>Many signals are accurate over 70% of the time and have been highly profitable in trending markets. However, these results are measured over months and years and are not well suited for short term (for e.g.flash crash). Sometimes the market signals get whipsawed between "BUY" to "SELL".
+				</p>
+			</li>
+			<li><strong>What are the performace results from the SignalGuru?</strong>
+				<p>SignalGuru system has handily beaten most BUY and HOLD or strategic allocation models. Some of the excellent results are shared on the main screen of the website. These excellent results are based on both LIVE results since 2003 and some back tested results. There is absolutely no guarantee that past performance is indicative of future results.
+				</p>
+			</li>
+			<li><strong>Are you a broker or an investment advisor?</strong>
+				<p>Absolutely NOT - The publisher is not a broker, or a financial advisor or RIA. The SignalGuru provides informational alerts only and is not be construed in any other way. It is strictly for information purposes. All trading decisions including whether it is appropriate for your specific financial condition, is to be solely determined by the reader. Please see detailed Terms of Service, License, Disclaimer and Customer Agreement.
+				</p>
+			</li>
+			<li><strong>How does an ETF differ from an index mutual fund?</strong>
+				<p>An ETF (Exchange Traded Fund) is an investment product that represents a basket of securities such as the S&P 500 Index. Unlike mutual funds, which are priced once a day after the US market closes,  ETF prices change throughout the day because they're traded like shares.
+				</p>
+			</li>
+			<li><strong>What are the advantages of ETFs versus mutual funds?</strong>
+				<p>ETFs typically charge 75% lower fees than actively managed mutual funds and offer investors a wide range of sectors, geographies and strategies.
+				</p>
+			</li>
+			<li><strong>Who is the owner of the the SignalGuru?</strong>
+				<p>The publishing team has decades of experience developing various Global Wealth Management technical systems for companies such as Bank of America Merrill Lynch, Citigroup, Smith Barney, Microsoft.
+				</p>
+			</li>
+			<li><strong> I already have a Financial Advisor. Why do I need another source of information from TheSignalGuru?</strong>
+				<p>The SignalGuru provides additional technical information for discussions with your financial advisor or whoever you make decisions with.
+				</p>
+			</li>
+			<li><strong>The SignalGuru model always books all trades on the last trading day of the month? I don't like to perform all the trades on the same date?</strong>
+				<p>The goal of the SignalGuru model is to identify tradeable trends that have cleared key technical hurdles. Some of these trends last months and years and some just for a few weeks. So you can break up your trades into 2 or 3 chunks and perform your trades appropriately. The model is based on simplicity and hence it trades on the last trading day of the month. Studies have shown no significant differences in terms of relative out performance one way or other over a long time horizon.
+				</p>
+			</li>
+		</ul>
+		<br>
+		<h3>Legal Disclaimer</h3>
+		<p>Terms of Service, License, Disclaimer and Customer Agreement<br><br>
+The customer is indicating acceptance of all the risks described in this disclaimer and the following terms by purchasing and/or using TheSignalGuru system. If this agreement is unacceptable to you, please do not use the system.
+All contents of TheSignalGuru system are presented for information purposes only and is not to be construed as advice or solicitation to buy or sell any security. The publisher is  not a  broker-dealer / financial advisor or RIA. The signals are intended as a service for information only. The publisher of TheSignalGuru assumes no liability for any direct, indirect, consequential or incidental damages arising out of any decision made by you resulting from the use of the material contained herein for any purposes, including investment purposes. Past performance does not guarantee future results. The computer generated mechanical market timing system is provided as is with no warranties or guarantees for fitness for any particular use except as required by law. Any and all use of TheSignalGuru for trading is performed at your own risk. There can be substantial risk of loss in trading stocks, ETFs, and funds including a total loss of capital. You should determine your own suitability for such trading based on your financial condition and in consultation with your financial advisor. This statement and this website cannot disclose all of the risks and other significant aspects of the stock markets or the use of our market timing signals. You should, therefore, carefully consider the risks and review this disclosure document before you trade. Some results are based on back testing. As such, they are hypothetical results. There are numerous other factors related to stock markets in general or to the implementation of any specific trading program which cannot be fully accounted for in the preparation of hypothetical trading performance results and all of which can adversely affect actual trading results. The information provided is based on sources believed to be reliable and is presented in good faith, but is not guaranteed to be completely accurate. There is no guarantee that the recommendations of TheSignalGuru will be profitable or will not be subject to losses.  </p>
+	</div>
+</div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

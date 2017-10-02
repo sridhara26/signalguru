@@ -1,0 +1,1092 @@
+var historical_signals = {"January.2016":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"December.2015":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"November.2015":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"October.2015":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"September.2015":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"August.2015":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"July.2015":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"June.2015":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"May.2015":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"April.2015":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"March.2015":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"February.2015":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"January.2015":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"December.2014":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"November.2014":{"IVV":"Invested","EFA":"Cash","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"October.2014":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"September.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"August.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"July.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"June.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"May.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"April.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"March.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"February.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"January.2014":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"December.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"November.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"October.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"September.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Cash","GLD":"Cash"},"August.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"July.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"June.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"May.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"April.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"March.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"February.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Cash"},"January.2013":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"December.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"November.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"October.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"September.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"August.2012":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"July.2012":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"June.2012":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"May.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"April.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"March.2012":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"February.2012":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"January.2012":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Cash"},"December.2011":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"November.2011":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"October.2011":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"September.2011":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"August.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"July.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"June.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"May.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"April.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"March.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"February.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"January.2011":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"December.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"November.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"October.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"September.2010":{"IVV":"Cash","EFA":"Cash","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"August.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"July.2010":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"June.2010":{"IVV":"Invested","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"May.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"April.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"March.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"February.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"January.2010":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"December.2009":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"November.2009":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"October.2009":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"September.2009":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"August.2009":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"July.2009":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Invested"},"June.2009":{"IVV":"Cash","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Invested"},"May.2009":{"IVV":"Cash","EFA":"Cash","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Invested"},"April.2009":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"March.2009":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"February.2009":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"January.2009":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"December.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Cash"},"November.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Cash"},"October.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Cash"},"September.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Cash"},"August.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"July.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"June.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"May.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"April.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"March.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"February.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Cash","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"January.2008":{"IVV":"Cash","EFA":"Cash","EEM":"Invested","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"December.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"November.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"October.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"September.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"August.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Cash","GLD":"Invested"},"July.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Cash","GLD":"Invested"},"June.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"May.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"April.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"March.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"February.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"January.2007":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"December.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"November.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"October.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"September.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"August.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"July.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"June.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"May.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"April.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"March.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"February.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"January.2006":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"December.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"November.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Cash","IYR":"Invested","GLD":"Invested"},"October.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"September.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"August.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"July.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Invested"},"June.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"May.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"April.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"March.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"February.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"January.2005":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"December.2004":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"November.2004":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"October.2004":{"IVV":"Invested","EFA":"Invested","EEM":"Invested","TLT":"Invested","IYR":"Invested","GLD":"Cash"},"September.2004":{"IVV":"Cash","EFA":"Invested","EEM":"Cash","TLT":"Invested","IYR":"Invested","GLD":"Cash"}}
+var wrong_key =
+  {
+    "12/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "11/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "10/1/2015": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "9/1/2015": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "8/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "7/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "6/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "5/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "4/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "3/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "2/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "1/1/2015": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "12/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "11/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "10/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "9/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "8/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "7/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "6/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "5/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "4/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "3/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "2/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "1/1/2014": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "12/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "11/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "10/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "9/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "8/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "7/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "6/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "5/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "4/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "3/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "2/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "1/1/2013": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "12/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "11/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "10/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "9/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "8/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "7/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "6/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "5/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "4/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "3/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "2/1/2012": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "1/1/2012": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "12/1/2011": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "11/1/2011": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "10/1/2011": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "9/1/2011": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "8/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "7/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "6/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "5/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "4/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "3/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "2/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "1/1/2011": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "12/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "11/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "10/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "9/1/2010": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "8/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "7/1/2010": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "6/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "5/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "4/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "3/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "2/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "1/1/2010": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "12/1/2009": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "11/1/2009": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "10/1/2009": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "9/1/2009": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "8/1/2009": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "7/1/2009": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "6/1/2009": {
+      "IVV": "Cash",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "5/1/2009": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "4/1/2009": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "3/1/2009": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "2/1/2009": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "1/1/2009": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "12/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "11/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "10/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "9/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Cash"
+    },
+    "8/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "7/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "6/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "5/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "4/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "3/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "2/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "1/1/2008": {
+      "IVV": "Cash",
+      "EFA": "Cash",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "12/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "11/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "10/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "9/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "8/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "7/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Cash",
+      "GLD": "Invested"
+    },
+    "6/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "5/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "4/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "3/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "2/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "1/1/2007": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "12/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "11/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "10/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "9/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "8/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "7/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "6/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "5/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "4/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "3/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "2/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "1/1/2006": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "12/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "11/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Cash",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "10/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "9/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "8/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "7/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Invested"
+    },
+    "6/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "5/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "4/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "3/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "2/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "1/1/2005": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "12/1/2004": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "11/1/2004": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "10/1/2004": {
+      "IVV": "Invested",
+      "EFA": "Invested",
+      "EEM": "Invested",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    },
+    "9/1/2004": {
+      "IVV": "Cash",
+      "EFA": "Invested",
+      "EEM": "Cash",
+      "TLT": "Invested",
+      "IYR": "Invested",
+      "GLD": "Cash"
+    }
+  }
